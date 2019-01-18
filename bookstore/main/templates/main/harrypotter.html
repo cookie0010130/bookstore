@@ -1,0 +1,77 @@
+<!doctype html> 
+{% load staticfiles %}
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{% static 'main/css/share.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/book.css' %}">
+</head> 
+<body> 
+
+<div id="wrapper">
+  <nav>
+    <ul class="menu">
+      <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+    </ul>
+  </nav>
+ 
+  <header>
+    <a href="{% url 'main:main' %}l"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
+  </header>
+  
+   
+<div>
+  <ul class="top">
+    <li class="top-sort"><a href="{% url 'main:新品推薦' %}"style="text-decoration:none;">新品推薦</a></li>．
+    <li class="top-sort"><a href="{% url 'main:暢銷書榜' %}"style="text-decoration:none;">暢銷書榜</a></li>．
+    <li class="top-sort"><a href="{% url 'main:今日66折' %}"style="text-decoration:none;">今日66折</a></li>
+  </ul>
+</div>
+  
+  
+  
+<sup><img src = "{% static 'main/img/hr01.jpg' %}" alt="hr" width = 100%></sup>
+   <aside>
+  <p class="shopmenu-title">購物分類</p>
+  <p class="shopmenu" >&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >中文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:經典文學' %}" style = "text-decoration:none;">經典文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:心理勵志' %}" style = "text-decoration:none;">心理勵志</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:推理文學' %}" style = "text-decoration:none;">推理文學</a></li>
+      </ul>
+    <p class="shopmenu" font-size: 15px>&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >英文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:科幻小說' %}" style = "text-decoration:none;">科幻小說</a></li>
+      </ul>
+  </aside>
+  <div id="content">  
+    <div id="photo">
+    <img class="photo-img" src="{% static 'main/img/harrypotter.jpg' %}">
+    </div>
+    <div id="author">
+      <p><b>Harry Potter and the Cursed Child - Parts One and Two: The Official Script Book of the Original West End Production Special Rehe</b></p>
+            作者： Rowling,J.K./ Thorne,JackTiffany,John<br>
+            出版社：Arthur a Levine<br>
+            出版日期：2016/07/31<br>
+            語言：英文<br>
+            定價：1050元<br>
+            優惠價：693元
+      <button>購買</button>
+    </div>
+    <div id="about" style="overflow-y:scroll">
+      <h3>內容簡介</h3><hr>
+　      　第一部哈利波特舞台劇<br>
+　　 正宗哈利波特第8集《哈利波特：被詛咒的孩子》<br>
+　　 以J.K. 羅琳最新的原創故事改編。2016年中全球首演劇本<br>
+ 
+      <p>　　19年過去了，哈利‧波特不僅是名人，更成為一名巫師、魔法部的超時工作員工、一名丈夫、及三個孩子的父親。雖然哈利一直拒絕屈服於他的命運，但他最小的兒子阿不思，仍然需要學習面對家族的傳統及盛名。他們父子必須共同面對那個令人不安的事實：有時，黑暗來自最意想不到的地方。</p>
+＜Ｂｏｏｋｓｔｏｒｅ編譯＞
+    </div>
+  </div>
+  <footer>這是footer</footer>
+</div> <!-- wrapper -->
+
+</body>
+</html>

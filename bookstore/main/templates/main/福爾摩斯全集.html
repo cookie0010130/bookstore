@@ -1,0 +1,104 @@
+<!doctype html> 
+{% load staticfiles %}
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{% static 'main/css/share.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/book.css' %}">
+</head> 
+<body> 
+
+<div id="wrapper">
+  <nav>
+    <ul class="menu">
+      <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+    </ul>
+  </nav>  </nav>
+ 
+  <header>
+    <a href="{% url 'main:main' %}"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
+  </header>
+  
+<div>
+  <ul class="top">
+    <li class="top-sort"><a href="{% url 'main:新品推薦' %}"style="text-decoration:none;">新品推薦</a></li>．
+    <li class="top-sort"><a href="{% url 'main:暢銷書榜' %}"style="text-decoration:none;">暢銷書榜</a></li>．
+    <li class="top-sort"><a href="{% url 'main:今日66折' %}"style="text-decoration:none;">今日66折</a></li>
+  </ul>
+</div>
+  
+  <div id="sup"><img src = "{% static 'main/img/hr01.jpg' %}" alt="hr" width = 100%></div>
+  <aside>
+  <p class="shopmenu-title">購物分類</p>
+  <p class="shopmenu" >&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >中文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:經典文學' %}" style = "text-decoration:none;">經典文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:心理勵志' %}" style = "text-decoration:none;">心理勵志</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:推理文學' %}" style = "text-decoration:none;">推理文學</a></li>
+      </ul>
+    <p class="shopmenu" font-size: 15px>&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >英文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:科幻小說' %}" style = "text-decoration:none;">科幻小說</a></li>
+      </ul>
+  </aside>
+  <div id="content">  
+    <div id="photo">
+    <img class="photo-img" src="{% static 'main/img/福爾摩斯全集.jpg' %}">
+    </div>
+    <div id="author">
+      <p><b>福爾摩斯探案全集(套書)</b></p>
+            作者： 柯南道爾<br>
+            譯者： 丁鍾華 等<br>
+            出版社：遠流<br>
+            出版日期：2005/01/01<br>
+            語言：繁體中文<br>
+            定價：1400元<br>
+            優惠價：7折980元
+      <button>購買</button>
+      
+    </div>
+    <div id="about" style="overflow-y:scroll">
+      <h3>內容簡介</h3><hr>
+　　　　歇洛克．福爾摩斯，一個家喻戶曉的名字，一百多年前由英國作家柯南道爾所一手塑造出來,他筆下的福爾摩斯深具鮮活的說服力,是後世無可企及的經典之作，如今已先後被翻譯成五十七國文字，成為暢銷全世界的不朽名著。遠流公司所出版《福爾摩斯探案全集》是全新完整的中譯本，更榮獲大陸第一屆全國優秀外國文學圖書獎。<br>
+
+　　小說是運用故事中人華生醫生的回憶錄形式來撰寫透過這種方式，時而客觀表述福爾摩斯的行動過程,時而主觀加上主角人物的分析，這樣的唱和演繹讓故事更顯得生動可信，使讀者身歷其境。<br>
+
+　　福爾摩斯是一個具有高度科學頭腦的私家偵探，他是一位理性又博學的英國紳士，他精通偵探業務所需的多種專長，如化學、心理學、解剖學、數學、外語(法文、義大利文、德文、拉丁文)等等。另外也善於刀劍，既可搏擊自衛又可擒兇捉匪。尤其他那觀察入微的細心和善於邏輯推理的縝密頭腦，一旦發現疑雲，就全心投入廢寢忘食地仔細推敲，直到案情水落石出。他高超的破案技巧常令華生心服口服更讓讀者拍案叫絕。<br>
+
+　　「如果說，羅蘭．巴特用一本《戀人絮語》揭露愛情的語言結構與表意系統，從此沒有先於語言的戀人，沒有先於符號的愛情，那麼，《傲慢與偏見》就是獨屬於珍迷的戀人絮語。在珍迷的世界中，沒有先於達西先生的男人，沒有先於《傲慢與偏見》的愛情。所有的愛情與慾望，都只能在珍．奧斯汀的語言與符號中產生意義。」——施舜翔
+
+      <h3>本書特色</h3><hr>
+
+　　1. 全新台灣譯者中譯<br>
+　　2. 參照哈佛大學註解版等中外相關文獻，提供最新穎、全面而當代化的中文註解<br>
+　　3. 系列總導讀：高瑟濡（台灣大學外文系教授）──社會與人性的觀察家：談珍‧奧斯汀的長篇小說，馮品佳（交通大學外文系講座教授，中研院歐美所合聘研究員）──我們的珍‧奧斯汀<br>
+　　4. 台灣當代作家專文推薦：施舜翔（作家，文化評論人）──珍‧奧斯汀的妹妹們：一段《傲慢與偏見》的當代再現史<br>
+　　5. 精采譯後記<br>
+　　6. 融合經典與現代，風格統一的包裝：知名平面設計師 莊謹銘 操刀「假使羅曼史小說有祖譜的話，那珍奧斯汀肯定是祖師奶奶。」——李桐豪（作家）<br>
+
+      <h3>好評推薦</h3><hr>
+
+　　「在欲望流竄的當代社會，奧斯汀筆下各種發乎情而又止乎禮的感情篇章或許更能引人入勝。」——馮品佳（交通大學外文系講座教授）<br>
+
+　　「一切的愛情故事從珍奧斯汀的地平線上起跑，跑，不停跑，世界上所有嚮往愛情的女孩都在奔跑……」——陳栢青（作家）<br>
+
+　　「珍．奧斯汀是我的使命。過去我一直嘗試在電影中把社會諷刺和家庭倫理劇融合起來；如今我理解到，長久以來我所做的，其實就是像珍．奧斯汀那樣的作品，只是沒意識到而已。」——李安（電影《理性與感性》導演，節錄自Newsweek專訪）<br>
+
+　　「有些書能夠表達對生活的看法，而且說得非常清楚，比我們自己說得都清楚。生活中的尷尬、苦惱、嫉妒、罪惡感，這一切經過奧斯汀之手一一呈現在我們眼前，使我們以一種神奇的方式看清自己。」——艾倫．狄波頓（英國知名作家）<br>
+
+　　「奧斯汀採用反諷的手法，把莎士比亞那種對人性的刻畫提升到爐火純青的地步。她非凡的喜劇天賦，自莎士比亞以降無人能出其右。」——哈洛卜倫（《西方正典》作者）<br>
+
+　　「奧斯汀小姐描述了日常生活中的平凡事物，人們在日常生活中的活動和情感；故事中沒有什麼大事，但是你讀完一頁會趕緊翻到下一頁，希望知道接下來會發生什麼事；下頁讀完，依舊沒什麼大事，可是你會帶著同樣迫切的心情往下閱讀。」——威廉．薩默塞特．毛姆（英國小說大師）<br>
+
+　　「我是珍迷，所以一提到她，我就會笨嘴笨舌的。」——E. M. 佛斯特（英國小說大師）<br>
+
+　　「我從七歲起就是珍迷。」——綺拉奈特莉（英國女星，節錄自媒體專訪）
+    </div>
+  </div>
+  <footer>這是footer</footer>
+</div> <!-- wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 1px solid blue;
+}
+
+div#wrapper {
+  margin: 0 auto;
+  width: ;
+  border: 1px solid green;
+}
+
+nav {
+  width: 50%;
+  height: 5em;
+  float:right;
+  border: 1px solid black;
+  
+}
+
+header {
+  
+  width: 50%;
+  height: 5em;
+  float:left;
+  border: 1px solid red;
+}
+
+aside {
+  width: 15%;
+  height: 30em;
+  float: left;
+ *border: 1px solid cyan;
+}
+
+div#content {
+  width: 85%;
+  height: 35em;
+  float: left;
+  border: 1px solid brown;
+}
+
+footer {
+  border: 1px solid chocolate;
+}
+
+
+
+.top {
+  margin: 0 ;
+  padding: 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.top-sort {                    /* 做最少量的設定，大多數的設定在 <a> */
+  display: inline-block;    /* 行內區塊顯示，因此允許橫向排列 */
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+
+}
+    
+    .menu {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-size: 15px;
+}
+
+.menu-sort {                    /* 做最少量的設定，大多數的設定在 <a> */
+  display: inline-block;    /* 行內區塊顯示，因此允許橫向排列 */
+  margin-right: 0.5em;
+  }
+  
+  .shopmenu{
+    margin:0 auto;
+  padding: 0 auto;
+  text-align: left;
+  font-size: 20px;
+  }
+  
+    .shopmenu1{
+    margin:0.1em ;
+  padding: 0 ;
+  text-align: left;
+  font-size: 20px;
+  }
+  
+  .shopmenu-title{
+  text-align: center;
+  font-size: 25px;
+  display: block;           /* 區塊顯示，因此允許設定 padding */
+  color: white;
+  text-decoration: none;
+  margin:0.5em 1em 0.5em 1em ;      /* 按鈕尺寸由 <a> 撐開 */
+  padding:0.25em;0.25em;0.25em;0.25em;
+  background-color: #8AA480;
+  border-radius: 10px; 
+  }
+
+

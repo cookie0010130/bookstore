@@ -1,0 +1,76 @@
+<!doctype html> 
+{% load staticfiles %}
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{% static 'main/css/share.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/輪播.css' %}">
+</head> 
+<body> 
+
+<div id="wrapper">
+  <nav>
+    <ul class="menu">
+      <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+    </ul>
+  </nav>
+ 
+  <header>
+    <a href="{% url 'main:main' %}"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
+  </header>
+  
+<div>
+  <ul class="top">
+    <li class="top-sort"><a href="{% url 'main:新品推薦' %}"style="text-decoration:none;">新品推薦</a></li>．
+    <li class="top-sort"><a href="{% url 'main:暢銷書榜' %}"style="text-decoration:none;">暢銷書榜</a></li>．
+    <li class="top-sort"><a href="{% url 'main:今日66折' %}"style="text-decoration:none;">今日66折</a></li>
+  </ul>
+</div>
+  
+  <div id="sup"><img src = "{% static 'main/img/hr01.jpg' %}" alt="hr" width = 100%></div>
+  <aside>
+  <p class="shopmenu-title">購物分類</p>
+  <p class="shopmenu" >&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >中文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:經典文學' %}" style = "text-decoration:none;">經典文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:心理勵志' %}" style = "text-decoration:none;">心理勵志</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:推理文學' %}" style = "text-decoration:none;">推理文學</a></li>
+      </ul>
+    <p class="shopmenu" font-size: 15px>&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >英文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:科幻小說' %}" style = "text-decoration:none;">科幻小說</a></li>
+      </ul>
+  </aside>
+  <div id="content">
+  
+        <!---圖片滑動--->
+      <div class="slider_container">
+  <div>
+    <img src="{% static 'main/img/福爾摩斯全集.jpg' %}" alt="pure css3 slider" />
+    
+  </div>
+  <div>
+    <img src="{% static 'main/img/傲慢與偏見.jpg' %}" alt="pure css3 slider" />
+    
+  </div>
+  <div>
+    <img src="{% static 'main/img/被討厭的勇氣.jpg' %}" alt="pure css3 slider" />
+    
+  </div>
+  <div>
+    <img src="{% static 'main/img/harrypotter.jpg' %}" alt="pure css3 slider" />
+    
+  </div>
+</div>
+    
+  </div>  <!-- wrapper -->
+  
+  </div>
+  
+  <footer>這是footer</footer>
+
+
+</body>
+</html>

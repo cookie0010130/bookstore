@@ -1,0 +1,48 @@
+<!doctype html> 
+{% load staticfiles %}
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{% static 'main/css/關於我們.css' %}">
+</head> 
+<body> 
+
+<div id="wrapper">
+  <nav>
+    <ul class="menu">
+      <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+    </ul>
+  </nav>
+ 
+ <header>
+    <a href="{% url 'main:main' %}"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
+  </header>
+  
+   
+  
+  
+<sup><img src = "{% static 'main/img/hr01.jpg' %}" alt="hr" width = 100%></sup>
+  <aside>
+  <p class="shopmenu-title">關於我們</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:關於bookstore' %}" style = "text-decoration:none;">關於bookstore</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:隱私政策' %}" style = "text-decoration:none;">隱私政策</a></li>
+      </ul>
+  </aside>
+  <div id="content">
+    <h2>隱私政策</h2>
+Bookstore非常重視會員的隱私權且遵循「個人資料保護法」之規定，因此制訂了隱私權保護政策，您可參考下列隱私權保護政策的內容。
+<h3>個人資料之安全</h3>
+保護會員的個人隱私是博客來重要的經營理念，在未經會員同意之下，我們絕不會將會員的個人資料提供予任何與本購物網站服務無關之第三人。會員應妥善保密自己的網路密碼及個人資料，不要將任何個人資料，尤其是網路密碼提供給任何人。
+在使用完博客來網站所提供的各項服務功能後，務必記得登出帳戶，若是與他人共享電腦或使用公共電腦，切記要關閉瀏覽器視窗。
+<h3>個人資料的蒐集、處理、利用</h3>
+Bookstore相關網站所取得的個人資料，都僅供Bookstore於其內部、依照原來所說明的使用目的和範圍，除非事先說明、或依照相關法律規定，否則Bookstore不會將資料提供給第三人、或移作其他目的使用。
+  </div>
+  <footer>這是footer</footer>
+</div>  <!-- wrapper -->
+
+
+</body>
+</html>

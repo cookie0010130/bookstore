@@ -1,0 +1,81 @@
+<!doctype html> 
+{% load staticfiles %}
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{% static 'main/css/share.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/商品.css' %}">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(function(){
+    var len = 90; // 超過50個字以"..."取代
+    $(".JQellipsis").each(function(i){
+        if($(this).text().length>len){
+            $(this).attr("title",$(this).text());
+            var text=$(this).text().substring(0,len-1)+"...";
+            $(this).text(text);
+        }
+    });
+});
+</script>
+</head> 
+<body> 
+
+<div id="wrapper">
+  <nav>
+    <ul class="menu">
+      <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+    </ul>
+  </nav>
+ 
+  <header>
+    <a href="{% url 'main:main' %}"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
+  </header>
+  
+<div>
+  <ul class="top">
+    <li class="top-sort"><a href="{% url 'main:新品推薦' %}"style="text-decoration:none;">新品推薦</a></li>．
+    <li class="top-sort"><a href="{% url 'main:暢銷書榜' %}"style="text-decoration:none;">暢銷書榜</a></li>．
+    <li class="top-sort"><a href="{% url 'main:今日66折' %}"style="text-decoration:none;">今日66折</a></li>
+  </ul>
+</div>
+  
+  <div id="sup"><img src = "{% static 'main/img/hr01.jpg' %}" alt="hr" width = 100%></div>
+  <aside>
+  <p class="shopmenu-title">購物分類</p>
+  <p class="shopmenu" >&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >中文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:經典文學' %}" style = "text-decoration:none;">經典文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:心理勵志' %}" style = "text-decoration:none;">心理勵志</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:推理文學' %}" style = "text-decoration:none;">推理文學</a></li>
+      </ul>
+    <p class="shopmenu" font-size: 15px>&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >英文書</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:科幻小說' %}" style = "text-decoration:none;">科幻小說</a></li>
+      </ul>
+  </aside>
+  <div id="content">  
+    <h2>　今日66折</h2>
+    <div id="product1">
+    <img class="product3-img" src="{% static 'main/img/harrypotter.jpg' %}">
+    </div>
+    <div id="product2">
+    </div>
+    <div id="product3"> 
+    </div>
+    <div id="introduce1"><a href="{% url 'main:harrypotter' %}" style = "text-decoration:none;">
+    <b class="JQellipsis">Harry Potter and the Cursed Child -<br>
+    Parts One and Two: The Official Script Book of the Original West End Production Special Rehe</b><br>
+    <p>作者：Rowling, J. K./ Thorne, Jack/ Tiffany, John<br>優惠價：79折284元</p>
+    
+    </a></div>
+    <div id="introduce2"></div>
+    <div id="introduce3"></div>
+  </div>
+  <footer>這是footer</footer>
+</div> <!-- wrapper -->
+
+</body>
+</html>

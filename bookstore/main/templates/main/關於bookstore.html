@@ -1,0 +1,56 @@
+<!doctype html> 
+{% load staticfiles %}
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{% static 'main/css/關於我們.css' %}">
+</head> 
+<body> 
+
+<div id="wrapper">
+  <nav>
+    <ul class="menu">
+      <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+    </ul>
+  </nav>
+ 
+  <header>
+    <a href="{% url 'main:main' %}"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
+  </header>
+  <sup><img src = "{% static 'main/img/hr01.jpg' %}" alt="hr" width = 100%></sup>
+  <aside>
+  <p class="shopmenu-title">關於我們</p>
+      <ul>
+        <li class="shopmenu1"><a href="{% url 'main:關於bookstore' %}" style = "text-decoration:none;">關於bookstore</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:隱私政策' %}" style = "text-decoration:none;">隱私政策</a></li>
+      </ul>
+  </aside>
+  <div id="content">
+    <h2>關於Bookstore</h2>
+<h3>經營理念</h3>
+「提供誠信、便利、專業、創新的服務平台，打造消費者完美使用經驗。」成為華文世界電子商務服務平台的第一品牌
+
+<h3>企業定位</h3>
+
+「以數位科技應用，結合虛擬與實體，成為消費者品味閱讀、質感生活的推動者」
+
+<h3>企業使命</h3>
+
+「以簡單、安心、創新的服務，打造讓消費者最便利使用的平台」
+
+<h3>企業願景</h3>
+
+「成為華文消費者『好書本指南、好生活解答』的首選服務平台」
+
+<h3>品牌精神</h3>
+
+「在購物中思考‧在閱讀中進化」「Book Your Life」
+  </div>
+  <footer>這是footer</footer>
+</div>  <!-- wrapper -->
+
+
+</body>
+</html>
