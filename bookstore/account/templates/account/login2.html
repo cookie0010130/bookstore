@@ -1,0 +1,5 @@
+{% for message in messages %}
+  <p class="{{ message.tags }}">{{ message }}</p>
+  <p><a href="/templates/main/main.html">按我回首頁</a></p>
+  <p><a href="/templates/account/login.html">在試一次</a></p>
+{% endfor %}

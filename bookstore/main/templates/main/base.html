@@ -1,0 +1,19 @@
+<!doctype html> 
+{% load staticfiles %}
+<html> 
+
+<head> 
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{% static 'main/css/share.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/輪播.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/登入.css' %}">
+{% block css %}{% endblock %}
+</head>
+{% include 'main/messages.html' %}
+<body>
+{% block content %}{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% block script %}{% endblock %}
+</body>
+
+</html>

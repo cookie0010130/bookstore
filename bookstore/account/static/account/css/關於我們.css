@@ -9,70 +9,55 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
 }
 
 div#wrapper {
   margin: 0 auto;
   width: ;
-  /*border: 1px solid green;*/
+  border: 1px solid green;
 }
 
 nav {
   width: 50%;
-  height: 5em;
+  height: 4.5em;
   float:right;
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   
 }
 
 header {
-  
   width: 50%;
-  height: 5em;
+  height: 4.5em;
   float:left;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 aside {
   width: 15%;
   height: 30em;
   float: left;
- /*border: 1px solid cyan;*/
+  border: 1px solid cyan;
 }
 
 div#content {
   width: 85%;
-  height: 35em;
+  height: 30em;
   float: left;
-  /*border: 1px solid brown;*/
+  border: 1px solid brown;
+  padding-left: 30px;
 }
 
 footer {
-  /*border: 1px solid chocolate;*/
+  border: 1px solid chocolate;
 }
 
 
-
-.top {
-  margin: 0 ;
-  padding: 0;
-  text-align: left;
-  font-size: 20px;
-}
-
-.top-sort {                    /* 做最少量的設定，大多數的設定在 <a> */
-  display: inline-block;    /* 行內區塊顯示，因此允許橫向排列 */
-  margin-right: 0.5em;
-  margin-left: 0.5em;
-
-}
-    
     .menu {
   margin: 0;
   padding: 0;
   text-align: right;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .menu-sort {                    /* 做最少量的設定，大多數的設定在 <a> */
@@ -80,21 +65,15 @@ footer {
   margin-right: 0.5em;
   }
   
-  .shopmenu{
-    margin:0 auto;
-  padding: 0 auto;
-  text-align: left;
-  font-size: 20px;
-  }
   
-    .shopmenu1{
-    margin:0.1em ;
+.shopmenu1{
+  margin:0.1em ;
   padding: 0 ;
   text-align: left;
   font-size: 20px;
   }
   
-  .shopmenu-title{
+.shopmenu-title{
   text-align: center;
   font-size: 25px;
   display: block;           /* 區塊顯示，因此允許設定 padding */
@@ -105,18 +84,3 @@ footer {
   background-color: #8AA480;
   border-radius: 10px; 
   }
-
-/* Messages */
-.success, .error {
-  padding: 1em 0 1em 3em;
-}
-
-.success {
-  background-color: #ddffdd;
-  border: thin solid green;
-}
-
-.error {
-  background-color: #fbd9d8;
-  border: thin solid red;
-}

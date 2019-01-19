@@ -67,3 +67,5 @@ def 福爾摩斯(requset):
 
 def harrypotter(requset):
     return render(requset,'main/harrypotter.html')
+
+

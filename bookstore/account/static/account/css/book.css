@@ -1,0 +1,35 @@
+div#photo {
+width:20%;
+margin:2em 4em 2em 10em ;
+height:18em;
+float:left;
+border: 1px solid #000000;
+border-radius: 10px;
+}
+
+div#author {
+width:30%;
+margin:2em 4em 2em 0em ;
+height:18em;
+float:left;
+/*border: 1px solid #000000;*/
+}
+
+.photo-img {
+  width:14em;
+  margin:1.5em 0.5em 0.5em 1.5em;
+}
+
+div#about {
+  width: 45%;
+  margin:0em 4em 2em 10em ;
+  height:12em;
+  float:left;
+  /*border: 1px solid #000000;*/
+}
+
+button {
+  background-color: #8AA480;
+  color: white;
+  border-radius: 5px;
+}
