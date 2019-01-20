@@ -5,17 +5,21 @@
   <nav>
     <ul class="menu">
       <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
-      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+        {% if user.is_authenticated %}
+      <li class="menu-sort"><a href="{% url 'account:logout' %}">登出 ({{ user.username }})</a></li>．
+        {% else %}
+      <li class="menu-sort"><a href="{% url 'account:login' %}"style="text-decoration:none;">登入</a></li>．
       <li class="menu-sort"><a href="{% url 'account:register' %}"style="text-decoration:none;">註冊</a></li>．
+        {% endif %}
       <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
     </ul>
   </nav>
-    <header>
-    <a href="{% url 'main:main' %}"><img src = "/static/main/img/bookstore02.jpg" alt="bookstore" width = "350" ></a>
-  </header>
+<div class="register">
 <form method="post" action="{% url 'account:register' %}">
+<a href="{% url 'main:main' %}"><img src = "/static/main/img/bookstore02.jpg" alt="bookstore" width = "250" ></a> 
   {% csrf_token %}
   {{ userForm.as_p }}
   <input class="btn" type="submit" value="送出">
 </form>
+</div>
 {% endblock %}

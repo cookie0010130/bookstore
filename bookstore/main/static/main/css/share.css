@@ -129,3 +129,11 @@ footer {
   float: left;
   border: 10px dashed #804000;
 }
+
+.register{
+  margin:1em 1em 1em 38em;
+  width: 30%;
+  height: 35em;
+  text-align:left;
+  float: center;
+}

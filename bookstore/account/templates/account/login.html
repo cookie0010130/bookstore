@@ -1,9 +1,9 @@
 {% extends "main/base.html" %}
 {% block heading %}登入{% endblock %}
 {% block content %}
- <h1><a href="{% url 'main:main' %}"><img src = "/static/main/img/bookstore02.jpg" alt="bookstore" width = "390" ></a></h1>
+<h1><a href="{% url 'main:main' %}"><img src = "/static/main/img/bookstore02.jpg" alt="bookstore" width = "390" ></a></h1>
 <form method="post" action="{% url 'account:login' %}">
-    <div class="main">
+   <div class="main">
   {% csrf_token %}
   <p>帳號：<input type="text" name="username"></p>
   <p>密碼：<input type="password" name="password"></p>
