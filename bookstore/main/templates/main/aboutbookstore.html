@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="{% static 'main/css/aboutbookstore.css' %}">
 </head> 
 <body> 
-
 <div id="wrapper">
   <nav>
     <ul class="menu">
@@ -24,25 +23,7 @@
   <header>
     <a href="{% url 'main:main' %}"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
   </header>
-  
-<div id="wrapper">
-  <nav>
-    <ul class="menu">
-      <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
-        {% if user.is_authenticated %}
-      <li class="menu-sort"><a href="{% url 'account:logout' %}">登出 ({{ user.username }})</a></li>．
-        {% else %}
-      <li class="menu-sort"><a href="{% url 'account:login' %}"style="text-decoration:none;">登入</a></li>．
-      <li class="menu-sort"><a href="{% url 'account:register' %}"style="text-decoration:none;">註冊</a></li>．
-        {% endif %}
-      <li class="menu-sort"><a href="{% url 'main:aboutbookstore' %}"style="text-decoration:none;">關於我們</a></li>
-    </ul>
-  </nav>
- 
-  <header>
-    <a href="{% url 'main:main' %}"><img src = "{% static 'main/img/bookstore02.jpg' %}" alt="bookstore" width = "350" ></a>
-  </header>
-  <sup><img src = "../img/hr01.jpg" alt="hr" width = 100%></sup>
+  <div id="sup"><img src = "{% static 'main/img/hr01.jpg' %}" alt="hr" width = 100%></div>
   <aside>
   <p class="shopmenu-title">關於我們</p>
       <ul>
