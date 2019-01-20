@@ -18,7 +18,7 @@
       <li class="menu-sort"><a href="{% url 'account:login' %}"style="text-decoration:none;">登入</a></li>．
       <li class="menu-sort"><a href="{% url 'account:register' %}"style="text-decoration:none;">註冊</a></li>．
         {% endif %}
-      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+      <li class="menu-sort"><a href="{% url 'main:aboutbookstore' %}"style="text-decoration:none;">關於我們</a></li>
     </ul>
   </nav>
  
@@ -28,9 +28,9 @@
   
 <div>
   <ul class="top">
-    <li class="top-sort"><a href="{% url 'main:新品推薦' %}"style="text-decoration:none;">新品推薦</a></li>．
-    <li class="top-sort"><a href="{% url 'main:暢銷書榜' %}"style="text-decoration:none;">暢銷書榜</a></li>．
-    <li class="top-sort"><a href="{% url 'main:今日66折' %}"style="text-decoration:none;">今日66折</a></li>
+    <li class="top-sort"><a href="{% url 'main:new' %}"style="text-decoration:none;">新品推薦</a></li>．
+    <li class="top-sort"><a href="{% url 'main:hot' %}"style="text-decoration:none;">暢銷書榜</a></li>．
+    <li class="top-sort"><a href="{% url 'main:34off' %}"style="text-decoration:none;">今日66折</a></li>
   </ul>
 </div>
   
@@ -39,47 +39,61 @@
   <p class="shopmenu-title">購物分類</p>
   <p class="shopmenu" >&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >中文書</p>
       <ul>
-        <li class="shopmenu1"><a href="{% url 'main:經典文學' %}" style = "text-decoration:none;">經典文學</a></li>
-        <li class="shopmenu1"><a href="{% url 'main:心理勵志' %}" style = "text-decoration:none;">心理勵志</a></li>
-        <li class="shopmenu1"><a href="{% url 'main:推理文學' %}" style = "text-decoration:none;">推理文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title1' %}" style = "text-decoration:none;">經典文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title2' %}" style = "text-decoration:none;">心理勵志</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title3' %}" style = "text-decoration:none;">推理文學</a></li>
       </ul>
     <p class="shopmenu" font-size: 15px>&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >英文書</p>
       <ul>
-        <li class="shopmenu1"><a href="{% url 'main:科幻小說' %}" style = "text-decoration:none;">科幻小說</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title4' %}" style = "text-decoration:none;">科幻小說</a></li>
       </ul>
   </aside>
   <div id="content">  
     <div id="photo">
-    <img class="photo-img" src="{% static 'main/img/福爾摩斯全集.jpg' %}">
+    <img class="photo-img" src="{% static 'main/img/book2.jpg' %}">
     </div>
     <div id="author">
-      <p><b>福爾摩斯探案全集(套書)</b></p>
-            作者： 柯南道爾<br>
-            譯者： 丁鍾華 等<br>
-            出版社：遠流<br>
-            出版日期：2005/01/01<br>
+      <p><b>被討厭的勇氣：自我啟發之父「阿德勒」的教導</b></p>
+            作者： 岸見一郎, 古賀史健<br>
+            譯者： 柯乃瑜<br>
+            出版社：究竟<br>
+            出版日期：2014/10/30<br>
             語言：繁體中文<br>
-            定價：1400元<br>
-            優惠價：7折980元
-       <button><a href ="{% url 'order:order' %}"style = "text-decoration:none;">購買</a></button>
+            定價：300元<br>
+            優惠價：79折237元
+      <button><a href ="{% url 'order:order' %}"style = "text-decoration:none;">購買</a></button>
       
     </div>
     <div id="about" style="overflow-y:scroll">
       <h3>內容簡介</h3><hr>
-　　　　歇洛克．福爾摩斯，一個家喻戶曉的名字，一百多年前由英國作家柯南道爾所一手塑造出來,他筆下的福爾摩斯深具鮮活的說服力,是後世無可企及的經典之作，如今已先後被翻譯成五十七國文字，成為暢銷全世界的不朽名著。遠流公司所出版《福爾摩斯探案全集》是全新完整的中譯本，更榮獲大陸第一屆全國優秀外國文學圖書獎。<br>
+　　所謂的自由，就是被別人討厭。<br>
+　　有人討厭你，正是你行使自由、依照自己的生活方針過日子的標記。<br>
+　　為什麼人們一直無法改變？<br>
+　　為什麼自卑感總是揮之不去？<br>
+　　為什麼我們總是活在別人的期待之下？<br>
+　　為什麼現在無法真實感受到幸福？<br>
+　　或許是因為，我們缺少了被別人討厭的勇氣！<br>
 
-　　小說是運用故事中人華生醫生的回憶錄形式來撰寫透過這種方式，時而客觀表述福爾摩斯的行動過程,時而主觀加上主角人物的分析，這樣的唱和演繹讓故事更顯得生動可信，使讀者身歷其境。<br>
+        <p>   　　一名憤世嫉俗的年輕人來到哲學家的小屋。<br>
+　　當他聽聞哲學家主張「世界無比單純，人人都能幸福」，便決心前來推翻這種謬論。<br>
+　　這個世界明明複雜混亂，哪裡單純了？<br>
+             　　如果幸福真的這麼容易，為什麼他還會過得這麼痛苦？<br></p>
 
-　　福爾摩斯是一個具有高度科學頭腦的私家偵探，他是一位理性又博學的英國紳士，他精通偵探業務所需的多種專長，如化學、心理學、解剖學、數學、外語(法文、義大利文、德文、拉丁文)等等。另外也善於刀劍，既可搏擊自衛又可擒兇捉匪。尤其他那觀察入微的細心和善於邏輯推理的縝密頭腦，一旦發現疑雲，就全心投入廢寢忘食地仔細推敲，直到案情水落石出。他高超的破案技巧常令華生心服口服更讓讀者拍案叫絕。<br>
+　　他們開始了你來我往的思考與論辯。<br>
+　　年輕人原以為哲學家不過是昧於現實的昏庸老頭，<br>
+　　但是一夜又一夜過去後，年輕人反而陷入沉思：這世界到底是什麼樣子？<br>
+　　「所謂的自由，就是被別人討厭。」哲學家說。<br>
+　　怎麼會這樣？怎麼會有人想被別人討厭？<br>
+　　想得到真正的自由，又為什麼非得被別人討厭不可呢？<br>
 
-　　「如果說，羅蘭．巴特用一本《戀人絮語》揭露愛情的語言結構與表意系統，從此沒有先於語言的戀人，沒有先於符號的愛情，那麼，《傲慢與偏見》就是獨屬於珍迷的戀人絮語。在珍迷的世界中，沒有先於達西先生的男人，沒有先於《傲慢與偏見》的愛情。所有的愛情與慾望，都只能在珍．奧斯汀的語言與符號中產生意義。」——施舜翔
+　　「如果說，羅蘭．巴特用一本《戀人絮語》揭露愛情的語言結構與表意系統，從此沒有先於語言的戀人，沒有先於符號的愛情，那麼，《傲慢與偏見》就是獨屬於珍迷的戀人絮語。在珍迷的世界中，沒有先於達西先生的男人，沒有先於《傲慢與偏見》的愛情。所有的愛情與慾望，都只能在珍．奧斯汀的語言與符號中產生意義。」——施舜翔<br>
 
       <h3>本書特色</h3><hr>
 
 　　1. 全新台灣譯者中譯<br>
 　　2. 參照哈佛大學註解版等中外相關文獻，提供最新穎、全面而當代化的中文註解<br>
 　　3. 系列總導讀：高瑟濡（台灣大學外文系教授）──社會與人性的觀察家：談珍‧奧斯汀的長篇小說，馮品佳（交通大學外文系講座教授，中研院歐美所合聘研究員）──我們的珍‧奧斯汀<br>
-　　4. 台灣當代作家專文推薦：施舜翔（作家，文化評論人）──珍‧奧斯汀的妹妹們：一段《傲慢與偏見》的當代再現史<br>
+    　　4. 台灣當代作家專文推薦：施舜翔（作家，文化評論人）──珍‧奧斯汀的妹妹們：一段《傲慢與偏見》的當代再現史<br>
 　　5. 精采譯後記<br>
 　　6. 融合經典與現代，風格統一的包裝：知名平面設計師 莊謹銘 操刀「假使羅曼史小說有祖譜的話，那珍奧斯汀肯定是祖師奶奶。」——李桐豪（作家）<br>
 

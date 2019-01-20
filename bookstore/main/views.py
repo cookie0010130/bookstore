@@ -8,64 +8,58 @@ def main(request):
     '''
     return render(request, 'main/main.html')
 
-def login(request):
-    '''
-    Render the about page
-    '''
-    return render(request, 'main/login.html')
-
 def about(request):
     '''
     Render the about page
     '''
     return render(request, 'main/about.html')
 
-def 登入(request):
+def login(request):
     '''
     Render the about page
     '''
-    return render(request, 'main/登入.html')
+    return render(request, 'main/login.html')
 
-def 關於bookstore(request):
+def aboutbookstore(request):
     '''
     Render the about page
     '''
-    return render(request, 'main/關於bookstore.html')
+    return render(request, 'main/aboutbookstore.html')
 
-def 隱私政策(requset):
-    return render(requset,'main/隱私政策.html')
+def personal(requset):
+    return render(requset,'main/personal.html')
 
-def 新品推薦(requset):
-    return render(requset,'main/新品推薦.html')
+def new(requset):
+    return render(requset,'main/new.html')
 
-def 暢銷書榜(requset):
-    return render(requset,'main/暢銷書榜.html')
+def hot(requset):
+    return render(requset,'main/hot.html')
 
-def 今日66折(requset):
-    return render(requset,'main/今日66折.html')
+def saleoff(requset):
+    return render(requset,'main/34off.html')
 
-def 經典文學(requset):
-    return render(requset,'main/經典文學.html')
+def title1(requset):
+    return render(requset,'main/title1.html')
 
-def 心理勵志(requset):
-    return render(requset,'main/心理勵志.html')
+def title2(requset):
+    return render(requset,'main/title2.html')
 
-def 推理文學(requset):
-    return render(requset,'main/推理文學.html')
+def title3(requset):
+    return render(requset,'main/title3.html')
 
-def 科幻小說(requset):
-    return render(requset,'main/科幻小說.html')
+def title4(requset):
+    return render(requset,'main/title4.html')
 
-def 傲慢與偏見(requset):
-    return render(requset,'main/傲慢與偏見.html')
+def book1(requset):
+    return render(requset,'main/book1.html')
 
-def 被討厭的勇氣(requset):
-    return render(requset,'main/被討厭的勇氣.html')
+def book2(requset):
+    return render(requset,'main/book2.html')
 
-def 福爾摩斯(requset):
-    return render(requset,'main/福爾摩斯全集.html')
+def book3(requset):
+    return render(requset,'main/book3.html')
 
-def harrypotter(requset):
-    return render(requset,'main/harrypotter.html')
+def book4(requset):
+    return render(requset,'main/book4.html')
 
 

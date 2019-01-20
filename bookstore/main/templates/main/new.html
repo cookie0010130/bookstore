@@ -4,7 +4,7 @@
 <head> 
 <meta charset="utf-8"> 
 <link rel="stylesheet" href="{% static 'main/css/share.css' %}">
-<link rel="stylesheet" href="{% static 'main/css/小商品.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/product.css' %}">
 </head> 
 <body> 
 
@@ -18,7 +18,7 @@
       <li class="menu-sort"><a href="{% url 'account:login' %}"style="text-decoration:none;">登入</a></li>．
       <li class="menu-sort"><a href="{% url 'account:register' %}"style="text-decoration:none;">註冊</a></li>．
         {% endif %}
-      <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
+      <li class="menu-sort"><a href="{% url 'main:aboutbookstore' %}"style="text-decoration:none;">關於我們</a></li>
     </ul>
   </nav>
  
@@ -28,9 +28,9 @@
   
 <div>
   <ul class="top">
-    <li class="top-sort"><a href="{% url 'main:新品推薦' %}"style="text-decoration:none;">新品推薦</a></li>．
-    <li class="top-sort"><a href="{% url 'main:暢銷書榜' %}"style="text-decoration:none;">暢銷書榜</a></li>．
-    <li class="top-sort"><a href="{% url 'main:今日66折' %}"style="text-decoration:none;">今日66折</a></li>
+    <li class="top-sort"><a href="{% url 'main:new' %}"style="text-decoration:none;">新品推薦</a></li>．
+    <li class="top-sort"><a href="{% url 'main:hot' %}"style="text-decoration:none;">暢銷書榜</a></li>．
+    <li class="top-sort"><a href="{% url 'main:34off' %}"style="text-decoration:none;">今日66折</a></li>
   </ul>
 </div>
   
@@ -39,24 +39,25 @@
   <p class="shopmenu-title">購物分類</p>
   <p class="shopmenu" >&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >中文書</p>
       <ul>
-        <li class="shopmenu1"><a href="{% url 'main:經典文學' %}" style = "text-decoration:none;">經典文學</a></li>
-        <li class="shopmenu1"><a href="{% url 'main:心理勵志' %}" style = "text-decoration:none;">心理勵志</a></li>
-        <li class="shopmenu1"><a href="{% url 'main:推理文學' %}" style = "text-decoration:none;">推理文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title1' %}" style = "text-decoration:none;">經典文學</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title2' %}" style = "text-decoration:none;">心理勵志</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title3' %}" style = "text-decoration:none;">推理文學</a></li>
       </ul>
     <p class="shopmenu" font-size: 15px>&nbsp;<img src = "{% static 'main/img/shopmenu.jpg' %}" >英文書</p>
       <ul>
-        <li class="shopmenu1"><a href="{% url 'main:科幻小說' %}" style = "text-decoration:none;">科幻小說</a></li>
+        <li class="shopmenu1"><a href="{% url 'main:title4' %}" style = "text-decoration:none;">科幻小說</a></li>
       </ul>
   </aside>
   <div id="content">  
+    <h2>　新品推薦</h2>
   <div id="product1">
-  <img class="product1-img"src="{% static 'main/img/被討厭的勇氣.jpg' %}">
+  <img class="product-img" src="{% static 'main/img/book2.jpg' %}">
   </div>
-    <div id="product2"> 
+    <div id="product2">
     </div>
     <div id="product3">
     </div>
-    <div id="introduce1"><a href="{% url 'main:被討厭的勇氣' %}" style = "text-decoration:none;">
+    <div id="introduce1"><a href="{% url 'main:book2' %}" style = "text-decoration:none;">
     <b>被討厭的勇氣：自我啟發之父「阿德勒」的教導</b><br>
     <p>作者：岸見一郎，古賀史健</p>
     優惠價：79折237元
