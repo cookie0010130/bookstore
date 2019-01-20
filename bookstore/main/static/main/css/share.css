@@ -120,3 +120,12 @@ footer {
   background-color: #fbd9d8;
   border: thin solid red;
 }
+
+.ordercheck{
+  margin:1em 1em 1em 20em;
+  width: 35%;
+  height: 35em;
+  text-align:center;
+  float: left;
+  border: 10px dashed #804000;
+}

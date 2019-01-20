@@ -11,7 +11,12 @@
   <nav>
     <ul class="menu">
       <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
-      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+        {% if user.is_authenticated %}
+      <li class="menu-sort"><a href="{% url 'account:logout' %}">登出 ({{ user.username }})</a></li>．
+        {% else %}
+      <li class="menu-sort"><a href="{% url 'account:login' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'account:register' %}"style="text-decoration:none;">註冊</a></li>．
+        {% endif %}
       <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
     </ul>
   </nav>
@@ -40,7 +45,7 @@ Bookstore非常重視會員的隱私權且遵循「個人資料保護法」之�
 <h3>個人資料的蒐集、處理、利用</h3>
 Bookstore相關網站所取得的個人資料，都僅供Bookstore於其內部、依照原來所說明的使用目的和範圍，除非事先說明、或依照相關法律規定，否則Bookstore不會將資料提供給第三人、或移作其他目的使用。
   </div>
-  <footer>這是footer</footer>
+  <footer></footer>
 </div>  <!-- wrapper -->
 
 

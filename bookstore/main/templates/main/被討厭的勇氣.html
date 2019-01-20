@@ -12,7 +12,12 @@
   <nav>
     <ul class="menu">
       <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
-      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+        {% if user.is_authenticated %}
+      <li class="menu-sort"><a href="{% url 'account:logout' %}">登出 ({{ user.username }})</a></li>．
+        {% else %}
+      <li class="menu-sort"><a href="{% url 'account:login' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'account:register' %}"style="text-decoration:none;">註冊</a></li>．
+        {% endif %}
       <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
     </ul>
   </nav>
@@ -56,7 +61,7 @@
             語言：繁體中文<br>
             定價：300元<br>
             優惠價：79折237元
-      <button>購買</button>
+      <button><a href ="{% url 'order:order' %}"style = "text-decoration:none;">購買</a></button>
       
     </div>
     <div id="about" style="overflow-y:scroll">
@@ -111,7 +116,7 @@
 　　「我從七歲起就是珍迷。」——綺拉奈特莉（英國女星，節錄自媒體專訪）
     </div>
   </div>
-  <footer>這是footer</footer>
+  <footer></footer>
 </div> <!-- wrapper -->
 
 </body>

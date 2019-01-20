@@ -11,7 +11,12 @@
   <nav>
     <ul class="menu">
       <li class="menu-sort"><a href="{% url 'main:main' %}" style="text-decoration:none;">首頁</a></li>．
-      <li class="menu-sort"><a href="{% url 'main:登入' %}"style="text-decoration:none;">登入</a></li>．
+        {% if user.is_authenticated %}
+      <li class="menu-sort"><a href="{% url 'account:logout' %}">登出 ({{ user.username }})</a></li>．
+        {% else %}
+      <li class="menu-sort"><a href="{% url 'account:login' %}"style="text-decoration:none;">登入</a></li>．
+      <li class="menu-sort"><a href="{% url 'account:register' %}"style="text-decoration:none;">註冊</a></li>．
+        {% endif %}
       <li class="menu-sort"><a href="{% url 'main:關於bookstore' %}"style="text-decoration:none;">關於我們</a></li>
     </ul>
   </nav>
@@ -48,7 +53,7 @@
 
 「在購物中思考‧在閱讀中進化」「Book Your Life」
   </div>
-  <footer>這是footer</footer>
+  <footer></footer>
 </div>  <!-- wrapper -->
 
 
